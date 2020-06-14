@@ -11,5 +11,9 @@ graphs:
 	python3 intro/graph_scatter.py
 	python3 intro/graph_scatter_equal.py
 
+test:
+	python3 -m unittest discover -t . -s tests
+
 clean:
-	rm intro/*.png
+	-rm intro/*.png
+	-rm -r **/__pycache__
