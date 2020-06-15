@@ -12,7 +12,7 @@ graphs:
 	python3 intro/graph_scatter_equal.py
 
 test:
-	python3 -m unittest discover -t . -s tests
+	python3 -m unittest discover
 
 clean:
 	-rm intro/*.png
